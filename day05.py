@@ -7,7 +7,7 @@ bad_substrings = ["ab", "cd", "pq", "xy"]
 def part1(input: str):
     count = 0
     for line in input.split("\n"):
-        if nice(line) is True:
+        if is_nice_part_01(line) is True:
             count += 1
     return count
 
@@ -42,7 +42,7 @@ def part2():
     None
 
 
-def nice(input: str) -> bool:
+def is_nice_part_01(input: str) -> bool:
     return (count_vowels(input) >= 3) and (contain_twice_letters(input)) and not (contain_bad_substings(input))
 
 

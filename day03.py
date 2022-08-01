@@ -74,8 +74,7 @@ def part2(input: str) -> int:
 
 if __name__ == '__main__':
     # FIXME
-    # I don't know why.. but this code not work with unit-tests... But it's work
-    # with prod data, LOL.
+    # This code not work with unit-tests, but it's works with prod data
     input = utils.read("day03")
     print(part1(input))
     print(part2(input))
